@@ -53,8 +53,8 @@ jobs:
     - name: Create Pre-release
       uses: softprops/action-gh-release@v1
       with:
-        tag_name: pre-${{ github.sha }}
-        name: Pre-release ${{ github.sha }}
+        tag_name: pre-${{ github.run_number }}
+        name: Pre-release Build #${{ github.run_number }}
         prerelease: true
         files: apk-files/**/*.apk
       env:
