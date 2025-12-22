@@ -78,6 +78,7 @@ android {
 
     lint {
         disable 'UnsafeOptInUsageError'
+        disable 'MissingLeanbackLauncher'
     }
 
     compileOptions {
